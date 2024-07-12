@@ -8,15 +8,28 @@ module.exports = {
     ],
     env: {
         es6: true,
-        node: true,
         "jest/globals": true,
     },
     parserOptions: {
         ecmaVersion: 'latest',
     },
     overrides: [
+        {
+            files: ['backend/**/*.js'],
+            env: {
+                node: true,
+            },
+        },
+        {
+            files: ['frontend/**/*.js'],
+            env: {
+                browser: true,
+                jquery: true,
+            },
+        },
     ],
     ignorePatterns: [
+        'node_modules/**/*',
     ],
     rules: {
         'no-unused-vars': ['error', { args: 'none' }],
