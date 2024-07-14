@@ -89,7 +89,9 @@
     },
     "main": "server.js",
     "devDependencies": {
+        "@chevrotain/types": "^11.0.3",
         "@types/jquery": "^3.5.29",
+        "chevrotain": "^11.0.3",
         "eslint": "^8.55.0",
         "jquery": "^3.6.4"
     }
