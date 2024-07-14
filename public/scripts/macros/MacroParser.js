@@ -1,4 +1,4 @@
-import { CstParser } from '../../lib/chevrotain.mjs';
+import { CstParser } from './lib.js';
 import { macroToken } from './MacroLexer.js';
 
 
